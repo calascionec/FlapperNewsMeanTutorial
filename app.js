@@ -2,7 +2,7 @@ var app = angular.module("flapperNews", ["ui.router"]);
 
 app.config([
   "$stateProvider",
-  "$urlRouterProvider".
+  "$urlRouterProvider",
   function($stateProvider, $urlRouterProvider){
 
     $stateProvider
@@ -10,7 +10,7 @@ app.config([
         url: "/home",
         templateUrl: "/home.html",
         controller: "MainCtrl"
-      });
+      })
 
     .state("posts", {
       url: "/posts/{id}",
